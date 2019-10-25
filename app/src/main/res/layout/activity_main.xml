@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80DEF5B4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="cursive"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Simple Calculator"
+        android:textColor="#DF08F7"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/border_liner"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Number 1" />
+
+        <EditText
+            android:id="@+id/edit_text_num2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Number2" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="#F70707"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F79191"
+            android:text="Sum"
+            android:textColor="#0766F8" />
+
+        <Button
+            android:id="@+id/btn_Multipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2FF771"
+            android:text="Multiple"
+            android:textColor="#0766F8" />
+
+        <Button
+            android:id="@+id/btn_Average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BF47F5"
+            android:text="Average"
+            android:textColor="#0766F8" />
+    </LinearLayout>
+</LinearLayout>
+
